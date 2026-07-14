@@ -1,0 +1,608 @@
+<!DOCTYPE html><html class="light scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>FEBRINA R.P. | PORTFOLIO</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&amp;family=Space+Grotesk:wght@500;700&amp;family=Archivo+Narrow:wght@400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Design System Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#71dba6",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#e5e2e1",
+                    "surface-bright": "#fcf9f8",
+                    "surface-container-high": "#eae7e7",
+                    "on-primary-fixed": "#002113",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f6f3f2",
+                    "on-surface-variant": "#3e4942",
+                    "primary-container": "#00875a",
+                    "secondary-fixed-dim": "#ffb1c6",
+                    "primary-fixed": "#8df7c1",
+                    "tertiary": "#9b403e",
+                    "surface-tint": "#006c47",
+                    "tertiary-fixed-dim": "#ffb3af",
+                    "secondary-container": "#fd6c9e",
+                    "secondary-fixed": "#ffd9e1",
+                    "on-tertiary-fixed": "#410005",
+                    "surface": "#fcf9f8",
+                    "inverse-primary": "#71dba6",
+                    "outline-variant": "#bdcac0",
+                    "on-primary-fixed-variant": "#005235",
+                    "inverse-surface": "#313030",
+                    "error": "#ba1a1a",
+                    "on-background": "#1c1b1b",
+                    "on-primary-container": "#ffffff",
+                    "tertiary-container": "#ba5855",
+                    "surface-dim": "#dcd9d9",
+                    "on-error-container": "#93000a",
+                    "outline": "#6e7a71",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#ab2c5f",
+                    "on-secondary-fixed": "#3f001c",
+                    "surface-container": "#f0eded",
+                    "on-surface": "#1c1b1b",
+                    "tertiary-fixed": "#ffdad7",
+                    "on-tertiary-container": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "background": "#fcf9f8",
+                    "on-primary": "#ffffff",
+                    "primary": "#006b47",
+                    "on-tertiary-fixed-variant": "#7d2a2a",
+                    "on-secondary-container": "#6e0036",
+                    "on-tertiary": "#ffffff",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-secondary-fixed-variant": "#8b0e47"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sm": "16px",
+                    "xl": "64px",
+                    "margin-desktop": "48px",
+                    "base": "4px",
+                    "xs": "8px",
+                    "md": "24px",
+                    "gutter": "20px",
+                    "margin-mobile": "16px",
+                    "lg": "40px"
+            },
+            "fontFamily": {
+                    "headline-xl": ["Montserrat"],
+                    "label-bold": ["Space Grotesk"],
+                    "headline-lg": ["Montserrat"],
+                    "label-sm": ["Space Grotesk"],
+                    "body-lg": ["Archivo Narrow"],
+                    "body-md": ["Archivo Narrow"],
+                    "headline-lg-mobile": ["Montserrat"],
+                    "display-lg": ["Montserrat"]
+            },
+            "fontSize": {
+                    "headline-xl": ["48px", {"lineHeight": "1.2", "fontWeight": "900"}],
+                    "label-bold": ["14px", {"lineHeight": "1", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                    "label-sm": ["12px", {"lineHeight": "1", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "1.5", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                    "display-lg": ["128px", {"lineHeight": "0.9", "letterSpacing": "-0.05em", "fontWeight": "900"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: inline-flex;
+            animation: marquee 20s linear infinite;
+        }
+        .brutal-shadow-sm { box-shadow: 4px 4px 0px 0px rgba(0,0,0,1); }
+        .brutal-shadow-md { box-shadow: 8px 8px 0px 0px rgba(0,0,0,1); }
+        .brutal-shadow-lg { box-shadow: 12px 12px 0px 0px rgba(0,0,0,1); }
+        .hover-press:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0px 0px rgba(0,0,0,1); }
+        .starburst {
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+        .starburst-complex {
+            clip-path: polygon(50% 0%, 54% 20%, 68% 10%, 65% 30%, 85% 25%, 75% 45%, 95% 50%, 75% 55%, 85% 75%, 65% 70%, 68% 90%, 54% 80%, 50% 100%, 46% 80%, 32% 90%, 35% 70%, 15% 75%, 25% 55%, 5% 50%, 25% 45%, 15% 25%, 35% 30%, 32% 10%, 46% 20%);
+        }
+        @keyframes float-1 {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        @keyframes float-2 {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        .animate-float-1 { animation: float-1 4s ease-in-out infinite; }
+        .animate-float-2 { animation: float-2 5s ease-in-out infinite; }
+    </style>
+</head>
+<body class="bg-[#FFF0F2] text-on-background selection:bg-primary-container selection:text-white" data-mode="connect">
+<!-- TopNavBar Predicted Component -->
+<header class="flex justify-between items-center px-margin-desktop h-xl w-full z-50 bg-background border-b-2 border-on-background sticky top-0">
+<div class="font-display-lg text-headline-lg uppercase tracking-tighter text-on-background dark:text-on-background">
+            FEBRINA R.P.
+        </div>
+<nav class="hidden md:flex gap-md font-label-bold text-label-bold uppercase">
+<a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary hover:bg-primary hover:text-on-primary transition-colors duration-150" href="#home">HOME</a>
+<a class="text-on-background hover:bg-primary hover:text-on-primary transition-colors duration-150 px-2" href="#about">ABOUT ME</a>
+<a class="text-on-background hover:bg-primary hover:text-on-primary transition-colors duration-150 px-2" href="#work">DATA PROJECTS</a>
+<a class="text-on-background hover:bg-primary hover:text-on-primary transition-colors duration-150 px-2" href="#web">WEB PROJECT</a>
+<a class="text-on-background hover:bg-primary hover:text-on-primary transition-colors duration-150 px-2" href="#certifications">CERTIFICATIONS</a>
+<a class="text-on-background hover:bg-primary hover:text-on-primary transition-colors duration-150 px-2" href="#contact">CONTACT</a>
+</nav>
+<button class="bg-primary text-white border-2 border-on-background brutal-shadow-sm px-sm py-xs font-label-bold hover-press">
+            HIRE ME
+        </button>
+</header>
+<main>
+<!-- Hero Section -->
+<section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-margin-mobile md:px-margin-desktop relative overflow-hidden">
+<div class="space-y-xs mb-md">
+<span class="bg-primary-fixed text-primary px-2 py-1 border-2 border-on-background font-label-bold text-label-sm inline-block rotate-[-2deg]">at the start, the idea was simple</span>
+<p class="font-body-md text-body-md max-w-lg mx-auto">an ordinary piece of work, done out of necessity and intention.</p>
+</div>
+<h1 class="font-display-lg text-[10vw] md:text-display-lg uppercase leading-none tracking-tighter flex items-center justify-center flex-wrap">
+                P<span class="">O</span>RT<span class="">O</span>F<span class="relative inline-flex items-center justify-center mx-1">
+<svg class="w-[0.85em] h-[0.85em] overflow-visible animate-float-1" viewBox="0 0 100 100">
+  <polygon points="50,5 61,35 95,35 68,57 79,90 50,70 21,90 32,57 5,35 39,35" fill="#00875a" stroke="#1c1b1b" stroke-width="6" stroke-linejoin="miter"/>
+</svg>
+</span>LIO
+            </h1>
+<!-- Floating Sticker Elements -->
+<div class="absolute top-1/4 left-10 hidden lg:block parallax-wrapper" data-speed="40">
+<div class="animate-float-1 bg-secondary-container p-sm border-2 border-on-background brutal-shadow-sm rotate-12 font-label-bold cursor-pointer hover:rotate-[24deg] transition-transform duration-300">DATA GEEK</div>
+</div>
+<div class="absolute bottom-1/4 right-20 hidden lg:block parallax-wrapper" data-speed="-30">
+<div class="animate-float-2 bg-primary-fixed p-sm border-2 border-on-background brutal-shadow-sm -rotate-6 font-label-bold cursor-pointer hover:rotate-[-12deg] transition-transform duration-300">GEN-Z ANALYST</div>
+</div>
+</section>
+<!-- Divider 1: About Me Marquee -->
+<div class="w-full bg-secondary py-xs border-y-4 border-on-background overflow-hidden flex whitespace-nowrap">
+<div class="animate-marquee font-label-bold text-headline-lg uppercase text-on-secondary">
+                ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME •&nbsp;
+            </div>
+<div class="animate-marquee font-label-bold text-headline-lg uppercase text-on-secondary">
+                ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME •&nbsp;
+            </div>
+</div>
+<!-- Get To Know Me Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface" id="about">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-lg items-center mb-xl">
+<div class="flex justify-center relative py-12">
+<div class="relative w-80 h-[400px] md:w-[420px] md:h-[520px] border-4 border-on-background brutal-shadow-lg p-4 md:p-6" 
+     style="background: conic-gradient(#006b47 90deg, #ffffff 90deg 180deg, #006b47 180deg 270deg, #ffffff 270deg) 0 0 / 40px 40px;">
+    
+    <!-- Sunburst Inner Frame -->
+    <div class="w-full h-full border-4 border-on-background relative overflow-hidden flex flex-col justify-end items-center" 
+         style="background: repeating-conic-gradient(from 0deg, #ffdad7 0deg 15deg, #fcf9f8 15deg 30deg);">
+         
+        <!-- The Person (Transparent PNG) -->
+        <!-- Added a bit of negative bottom margin so she sits on the bottom edge -->
+        <img class="w-[120%] max-w-none h-auto object-contain relative z-10 hover:scale-105 transition-transform duration-500 origin-bottom translate-y-4" 
+             src="Photos/FEBBY%20NO%20BG%20(1).png" alt="Febrina">
+             
+    </div>
+
+    <!-- Decorative Elements (Absolute) -->
+    <!-- Pink Squiggle -->
+    <svg class="absolute -top-12 -left-16 w-32 h-32 drop-shadow-[6px_6px_0_rgba(28,27,27,1)] -rotate-12 z-20 pointer-events-none" viewBox="0 0 100 100" fill="none">
+        <path d="M10,20 Q25,0 40,20 T70,20 T100,20" stroke="#ffdad7" stroke-width="12" stroke-linecap="round"/>
+        <path d="M10,50 Q25,30 40,50 T70,50 T100,50" stroke="#ffdad7" stroke-width="12" stroke-linecap="round"/>
+        <path d="M10,80 Q25,60 40,80 T70,80 T100,80" stroke="#ffdad7" stroke-width="12" stroke-linecap="round"/>
+    </svg>
+
+    <!-- Heart -->
+    <svg class="absolute -bottom-16 -right-12 w-40 h-40 text-[#ffdad7] drop-shadow-[6px_6px_0_rgba(28,27,27,1)] rotate-12 z-20 pointer-events-none" viewBox="0 0 24 24" fill="currentColor" stroke="#1c1b1b" stroke-width="1">
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+    </svg>
+    <!-- Add a smaller inner heart cutout effect (white heart inside) -->
+    <svg class="absolute -bottom-16 -right-12 w-40 h-40 text-white rotate-12 z-20 scale-50 pointer-events-none" viewBox="0 0 24 24" fill="currentColor" stroke="#1c1b1b" stroke-width="2">
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+    </svg>
+
+    <!-- Star 1 -->
+    <svg class="absolute bottom-12 -left-10 w-24 h-24 text-[#ffc107] drop-shadow-[6px_6px_0_rgba(28,27,27,1)] -rotate-12 z-20 pointer-events-none" viewBox="0 0 24 24" fill="currentColor" stroke="#1c1b1b" stroke-width="1.5">
+        <path d="M12 2L15 9L22 9L16.5 14L18.5 21L12 17L5.5 21L7.5 14L2 9L9 9L12 2Z" />
+    </svg>
+
+    <!-- White Squiggle (Like a curly loop) -->
+    <svg class="absolute -top-12 -right-16 w-40 h-40 drop-shadow-[6px_6px_0_rgba(28,27,27,1)] rotate-[30deg] z-20 pointer-events-none" viewBox="0 0 100 100" fill="none">
+        <path d="M10,80 C 10,20 60,10 70,40 C 80,70 40,80 30,50 C 20,20 90,20 90,20" stroke="white" stroke-width="8" stroke-linecap="round"/>
+    </svg>
+
+    <!-- Badge -->
+    <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-primary text-on-primary px-6 py-2 border-2 border-on-background brutal-shadow-sm font-label-bold -rotate-3 z-30 whitespace-nowrap text-xl">
+        HIRE ME!
+    </div>
+</div>
+</div>
+<div class="space-y-md">
+<div class="inline-block bg-on-background text-background px-md py-xs font-headline-lg text-headline-lg brutal-shadow-sm">
+                    GET TO KNOW ME!
+                </div>
+<h2 class="font-headline-xl text-headline-xl">Hello I'm Febrina Rahmadianti Putri!</h2>
+<div class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    As a Digital Business student specializing in <strong>Data Analysis</strong> at Ibn Khaldun University in Bogor, I always strive for excellence in everything I do. I currently maintain a GPA of 3.91. My primary interest is transforming raw data into clear business solutions, complemented by a practical interest in basic <strong>web development</strong> to create engaging, data-driven web experiences.
+                </div>
+<div class="space-y-sm">
+<h3 class="font-label-bold text-primary">HARD SKILLS:</h3>
+<div class="flex flex-wrap gap-md items-center mt-2">
+<img src="photos/microsoft-excel-2025.jpg" alt="Excel" class="w-16 h-16 object-contain mix-blend-multiply hover:-translate-y-2 hover:scale-110 hover:rotate-6 transition-all duration-300 cursor-pointer">
+<img src="photos/google-looker-studio-data-studio.webp" alt="Looker Studio" class="w-24 h-24 object-contain mix-blend-multiply hover:-translate-y-2 hover:scale-110 hover:-rotate-6 transition-all duration-300 cursor-pointer -mx-2">
+<img src="photos/canva-icon.webp" alt="Canva" class="w-14 h-14 object-contain hover:-translate-y-2 hover:scale-110 hover:rotate-6 transition-all duration-300 cursor-pointer drop-shadow-md">
+</div>
+</div>
+<div class="space-y-sm">
+<h3 class="font-label-bold text-secondary">SOFT SKILLS:</h3>
+<div class="flex flex-wrap gap-xs">
+<span class="border-2 border-on-background px-sm py-xs bg-white brutal-shadow-sm font-label-bold hover:bg-secondary-fixed transition-colors cursor-default">ANALYTICAL THINKING</span>
+<span class="border-2 border-on-background px-sm py-xs bg-white brutal-shadow-sm font-label-bold hover:bg-secondary-fixed transition-colors cursor-default">PROBLEM SOLVING</span>
+<span class="border-2 border-on-background px-sm py-xs bg-white brutal-shadow-sm font-label-bold hover:bg-secondary-fixed transition-colors cursor-default">TEAMWORK</span>
+<span class="border-2 border-on-background px-sm py-xs bg-white brutal-shadow-sm font-label-bold hover:bg-secondary-fixed transition-colors cursor-default">RESPONSIBLE</span>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-lg pt-xl border-t-4 border-on-background">
+<!-- Education -->
+<div class="space-y-md flex flex-col">
+<h2 class="font-headline-xl text-headline-xl border-b-4 border-on-background inline-block pb-2">EDUCATION</h2>
+<div class="bg-white border-2 border-on-background p-md brutal-shadow-md flex-1">
+<div class="flex justify-between items-start mb-sm">
+<div>
+<h3 class="font-headline-lg text-headline-lg">Ibn Khaldun Bogor</h3>
+<p class="font-label-bold text-primary">Bachelor of Digital Business</p>
+</div>
+<span class="bg-on-background text-white px-2 py-1 font-label-bold">2023 - Now</span>
+</div>
+<div class="font-body-lg">
+<p class="">GPA: <strong>3.91/4.00</strong></p>
+<p class="mt-xs">Focusing on data-driven business decision making and strategic digital implementation.</p>
+</div>
+</div>
+</div>
+<!-- Organizational Experience -->
+<div class="space-y-md flex flex-col">
+<h2 class="font-headline-xl text-headline-xl border-b-4 border-on-background inline-block pb-2">ORGANIZATIONS</h2>
+<div class="bg-white border-2 border-on-background p-md brutal-shadow-md flex-1">
+<div class="space-y-md">
+<!-- Exp 1 -->
+<div>
+<h3 class="font-headline-lg text-xl leading-tight">Secretary of POD</h3>
+<p class="font-label-bold text-primary text-xs mb-2">JAN 2025 - DEC 2025</p>
+<ul class="list-disc list-inside font-body-md text-sm space-y-1">
+<li>Managed division administration and coordination.</li>
+<li>Supported member development programs.</li>
+</ul>
+</div>
+<div class="border-b-2 border-on-background border-dashed"></div>
+<!-- Exp 2 -->
+<div>
+<h3 class="font-headline-lg text-xl leading-tight">Secretary of D'BASIC</h3>
+<p class="font-label-bold text-primary text-xs mb-2">JUL 2025 - NOV 2025</p>
+<ul class="list-disc list-inside font-body-md text-sm space-y-1">
+<li>Coordinated event administrative needs.</li>
+<li>Organized schedules and ensured smooth information flow.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Languages -->
+<div class="mt-xl pt-xl border-t-4 border-on-background border-dashed text-center">
+<h2 class="font-headline-xl text-headline-xl border-b-4 border-on-background inline-block pb-2 mb-md">LANGUAGES</h2>
+<div class="flex justify-center gap-md flex-wrap">
+<div class="bg-white p-sm border-2 border-on-background brutal-shadow-sm text-center hover:bg-primary-fixed hover:-translate-y-1 transition-all cursor-pointer group w-48">
+<p class="font-label-bold text-lg">INDONESIAN 🇮🇩</p>
+<p class="text-label-sm text-on-surface-variant mt-1">Native</p>
+</div>
+<div class="bg-white p-sm border-2 border-on-background brutal-shadow-sm text-center hover:bg-primary-fixed hover:-translate-y-1 transition-all cursor-pointer group w-48">
+<p class="font-label-bold text-lg">ENGLISH 🇬🇧</p>
+<p class="text-label-sm text-on-surface-variant mt-1">Professional</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Divider 2: Projects Marquee -->
+<div class="w-full bg-primary-container py-xs border-y-4 border-on-background overflow-hidden flex whitespace-nowrap">
+<div class="animate-marquee font-label-bold text-headline-lg uppercase text-white">
+                DATA ANALYTICS • DATA ANALYTICS • DATA ANALYTICS • DATA ANALYTICS • DATA ANALYTICS • DATA ANALYTICS • DATA ANALYTICS • DATA ANALYTICS •&nbsp;
+            </div>
+<div class="animate-marquee font-label-bold text-headline-lg uppercase text-white">
+                DATA ANALYTICS • DATA ANALYTICS • DATA ANALYTICS • DATA ANALYTICS • DATA ANALYTICS • DATA ANALYTICS • DATA ANALYTICS • DATA ANALYTICS •&nbsp;
+            </div>
+</div>
+<!-- Projects Grid -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="work">
+<div class="text-center mb-xl">
+<h2 class="font-display-lg text-headline-xl md:text-display-lg uppercase tracking-tight">DATA PROJECTS</h2>
+<div class="h-1 w-48 bg-on-background mx-auto mt-2"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+<!-- Project Card 1 -->
+<article class="bg-white border-2 border-on-background brutal-shadow-md p-sm flex flex-col hover:translate-y-[-4px] transition-transform">
+<div class="aspect-video border-2 border-on-background overflow-hidden mb-sm relative bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="A clean and professional data dashboard interface showing operational and financial performance for a luxury villa. The UI features crisp charts, tables, and KPI cards in a modern business aesthetic with primary green and neutral gray tones. High-contrast typography and clear data visualization are the focus." src="Photos/SS%20DB%20VILLA.png">
+<div class="absolute top-2 right-2 bg-secondary text-white px-2 py-1 font-label-bold text-xs border-2 border-on-background">FINANCE</div>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-sm leading-tight">Laporan Performa Operasional &amp; Keuangan Vila</h3>
+<div class="mt-auto space-y-sm">
+<div class="flex flex-wrap gap-xs">
+<span class="text-label-sm font-label-bold px-2 py-1 bg-primary-fixed border border-on-background">Looker Studio</span>
+</div>
+<div class="text-body-md text-on-surface-variant">
+<strong>Source:</strong> Kaggle Dataset
+                        </div>
+<a href="https://datastudio.google.com/reporting/256508e5-07b7-41db-bc28-f9b0ed62f774" target="_blank" class="w-full py-xs border-2 border-on-background bg-on-background text-white font-label-bold brutal-shadow-sm hover-press text-center inline-block">VIEW DASHBOARD</a>
+</div>
+</article>
+<!-- Project Card 2 -->
+<article class="bg-white border-2 border-on-background brutal-shadow-md p-sm flex flex-col hover:translate-y-[-4px] transition-transform">
+<div class="aspect-video border-2 border-on-background overflow-hidden mb-sm relative bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="A retail sales performance dashboard showcasing interactive charts, geographic heatmaps, and sales trend lines. The design is sleek and data-heavy, presented with a vibrant color palette of emerald green and white. The layout is structured in a clean grid with thick black borders consistent with a brutalist digital style." src="Photos/SS%20DB%20RETAIL.png">
+<div class="absolute top-2 right-2 bg-secondary text-white px-2 py-1 font-label-bold text-xs border-2 border-on-background">RETAIL</div>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-sm leading-tight">Retail Sales Performance Overview</h3>
+<div class="mt-auto space-y-sm">
+<div class="flex flex-wrap gap-xs">
+<span class="text-label-sm font-label-bold px-2 py-1 bg-primary-fixed border border-on-background">Looker Studio</span>
+</div>
+<div class="text-body-md text-on-surface-variant">
+<strong>Source:</strong> Kaggle Dataset
+                        </div>
+<a href="https://datastudio.google.com/reporting/f92cc1d0-fcd0-474f-9efb-184605c26e56" target="_blank" class="w-full py-xs border-2 border-on-background bg-on-background text-white font-label-bold brutal-shadow-sm hover-press text-center inline-block">VIEW DASHBOARD</a>
+</div>
+</article>
+<!-- Project Card 3 -->
+<article class="bg-white border-2 border-on-background brutal-shadow-md p-sm flex flex-col hover:translate-y-[-4px] transition-transform" style="transform: translate(0px, 0px); box-shadow: rgb(0, 0, 0) 8px 8px 0px 0px;">
+<div class="aspect-video border-2 border-on-background overflow-hidden mb-sm relative bg-surface-variant">
+<img class="w-full h-full object-cover object-top" data-alt="A data analytics dashboard in Looker Studio." src="Photos/SS%20DB%20PROJEK%203.png">
+<div class="absolute top-2 right-2 bg-secondary text-white px-2 py-1 font-label-bold text-xs border-2 border-on-background">ANALYTICS</div>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-sm leading-tight">Data Analytics Dashboard</h3>
+<div class="mt-auto space-y-sm">
+<div class="flex flex-wrap gap-xs">
+<span class="text-label-sm font-label-bold px-2 py-1 bg-primary-fixed border border-on-background">Looker Studio</span>
+</div>
+<div class="text-body-md text-on-surface-variant">
+<strong>Source:</strong> Kaggle Dataset
+                        </div>
+<a href="https://datastudio.google.com/reporting/f578fef3-8a43-4e9c-a323-e34d5c445382" target="_blank" class="w-full py-xs border-2 border-on-background bg-on-background text-white font-label-bold brutal-shadow-sm hover-press text-center inline-block">VIEW DASHBOARD</a>
+</div>
+</article>
+</div>
+</section>
+<!-- Divider 3: Web Project Marquee -->
+<div class="w-full bg-primary py-xs border-y-4 border-on-background overflow-hidden flex whitespace-nowrap">
+<div class="animate-marquee font-label-bold text-headline-lg uppercase text-white">
+                WEB DEVELOPER • WEB DEVELOPER • WEB DEVELOPER • WEB DEVELOPER • WEB DEVELOPER • WEB DEVELOPER • WEB DEVELOPER • WEB DEVELOPER •&nbsp;
+            </div>
+<div class="animate-marquee font-label-bold text-headline-lg uppercase text-white">
+                WEB DEVELOPER • WEB DEVELOPER • WEB DEVELOPER • WEB DEVELOPER • WEB DEVELOPER • WEB DEVELOPER • WEB DEVELOPER • WEB DEVELOPER •&nbsp;
+            </div>
+</div>
+<!-- Web Projects Grid -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface" id="web">
+<div class="text-center mb-xl">
+<h2 class="font-display-lg text-headline-xl md:text-display-lg uppercase tracking-tight">WEB PROJECT</h2>
+<div class="h-1 w-48 bg-on-background mx-auto mt-2"></div>
+</div>
+<div class="flex justify-center max-w-7xl mx-auto">
+<!-- Project Card 1 -->
+<article class="bg-white border-2 border-on-background brutal-shadow-md p-sm flex flex-col hover:translate-y-[-4px] transition-transform w-full md:w-[400px]">
+<div class="aspect-video border-2 border-on-background overflow-hidden mb-sm relative bg-surface-variant">
+<img class="w-full h-full object-cover object-top" data-alt="Tampilan depan web monitoring MBG Kota Bogor." src="Photos/WEB%20MBG.png">
+<div class="absolute top-2 right-2 bg-secondary text-white px-2 py-1 font-label-bold text-xs border-2 border-on-background">WEB DEV</div>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-sm leading-tight">Web Monitoring MBG Kota Bogor</h3>
+<div class="mt-auto space-y-sm">
+<div class="flex flex-wrap gap-xs">
+<span class="text-label-sm font-label-bold px-2 py-1 bg-primary-fixed border border-on-background">Web Monitoring</span>
+</div>
+<div class="text-body-md text-on-surface-variant">
+<strong>Source:</strong> Internal MBG
+                        </div>
+<a href="https://projek-website-mbg-newww.vercel.app" target="_blank" class="w-full py-xs border-2 border-on-background bg-on-background text-white font-label-bold brutal-shadow-sm hover-press text-center inline-block">VIEW WEBSITE</a>
+</div>
+</article>
+</div>
+</section>
+<!-- Certification Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-[#FFF0F2] flex flex-col items-center text-center" id="certifications">
+<h2 class="font-headline-xl text-headline-xl border-b-4 border-on-background inline-block pb-2 mb-lg">CERTIFICATIONS</h2>
+<div class="w-full max-w-2xl relative group text-left">
+<div class="absolute inset-0 bg-primary-container starburst brutal-shadow-sm opacity-20 group-hover:opacity-40 transition-opacity"></div>
+<div class="relative bg-white border-2 border-on-background p-md brutal-shadow-md flex flex-col md:flex-row items-center gap-md">
+<span class="material-symbols-outlined text-display-lg text-primary" style="font-variation-settings: &quot;FILL&quot; 1;">workspace_premium</span>
+<div class="text-center md:text-left flex-1">
+<h3 class="font-label-bold text-headline-lg">Intensive Microsoft Excel Bootcamp</h3>
+<p class="bg-secondary text-white inline-block px-2 font-label-bold mt-xs">EXPERT LEVEL • 3-WEEKS</p>
+</div>
+<a href="Febrina%20Rahmadianti%20Putri%20-%20Sertifikat%20Excel%20Batch%208.pdf" target="_blank" class="w-full md:w-auto px-sm py-xs border-2 border-on-background bg-primary text-on-primary font-label-bold brutal-shadow-sm hover-press text-center whitespace-nowrap mt-sm md:mt-0">VIEW CERTIFICATE</a>
+</div>
+</div>
+</section>
+</main>
+
+<!-- Footer / Contact Section -->
+<footer class="bg-secondary text-on-secondary min-h-screen flex flex-col justify-center items-center px-margin-desktop gap-xl text-center border-t-4 border-on-background relative" id="contact">
+    <div class="font-display-lg text-[8vw] md:text-display-lg text-on-secondary uppercase tracking-tighter leading-none flex flex-wrap items-center justify-center gap-x-2 md:gap-x-4">
+        <span>LET'S</span>
+        <span class="flex items-center">W<span class="relative inline-flex items-center justify-center mx-1 md:mx-2">
+            <svg class="w-[0.85em] h-[0.85em] overflow-visible animate-float-1" viewBox="0 0 100 100">
+              <polygon points="50,5 61,35 95,35 68,57 79,90 50,70 21,90 32,57 5,35 39,35" fill="#00875a" stroke="#1c1b1b" stroke-width="6" stroke-linejoin="miter"/>
+            </svg>
+        </span>RK</span>
+        <span>TOGETHER</span>
+    </div>
+    <p class="font-body-lg text-body-lg max-w-xl opacity-90">Ready to transform your data into actionable insights? Feel free to reach out through any of the platforms below.</p>
+    
+    <div class="flex flex-wrap justify-center gap-lg font-label-bold text-headline-md mt-md">
+        <!-- Email -->
+        <a class="flex flex-col items-center gap-xs hover:scale-110 hover:text-white transition-transform text-on-secondary group" href="mailto:febrhdn@gmail.com" target="_blank">
+            <img src="Photos/SS%20GMAIL1.webp" alt="Email" class="w-16 h-16 md:w-20 md:h-20 object-contain mix-blend-screen opacity-90 group-hover:opacity-100" style="filter: grayscale(1) brightness(0.6) contrast(1000%);">
+            <span class="text-label-sm mt-xs">EMAIL</span>
+        </a>
+        <!-- LinkedIn -->
+        <a class="flex flex-col items-center gap-xs hover:scale-110 hover:text-white transition-transform text-on-secondary group" href="https://www.linkedin.com/in/febrina-rahma-776186422/" target="_blank">
+            <img src="Photos/SS%20LINKEDIN.jpg" alt="LinkedIn" class="w-16 h-16 md:w-20 md:h-20 object-contain mix-blend-screen opacity-90 group-hover:opacity-100" style="filter: grayscale(1) brightness(0.6) contrast(1000%);">
+            <span class="text-label-sm mt-xs">LINKEDIN</span>
+        </a>
+        <!-- Instagram -->
+        <a class="flex flex-col items-center gap-xs hover:scale-110 hover:text-white transition-transform text-on-secondary group" href="https://www.instagram.com/febrinarhdn?igsh=dTkxZmN5c3RmNjBh" target="_blank">
+            <img src="Photos/SS%20IG1.png" alt="Instagram" class="w-16 h-16 md:w-20 md:h-20 object-contain mix-blend-screen opacity-90 group-hover:opacity-100" style="filter: grayscale(1) brightness(0.6) contrast(1000%);">
+            <span class="text-label-sm mt-xs">INSTAGRAM</span>
+        </a>
+        <!-- WhatsApp -->
+        <a class="flex flex-col items-center gap-xs hover:scale-110 hover:text-white transition-transform text-on-secondary group" href="https://wa.me/6285188429794" target="_blank">
+            <img src="Photos/SS%20WA.png" alt="WhatsApp" class="w-16 h-16 md:w-20 md:h-20 object-contain mix-blend-screen opacity-90 group-hover:opacity-100" style="filter: grayscale(1) brightness(0.6) contrast(1000%);">
+            <span class="text-label-sm mt-xs">WHATSAPP</span>
+        </a>
+    </div>
+    
+    <div class="absolute bottom-10 font-label-bold text-label-sm opacity-80">
+        ©2024 FEBRINA RP • BUILT WITH DATA &amp; VIBES
+    </div>
+</footer>
+
+<!-- SideNavBar Predicted Component (Hidden on mobile) -->
+<aside class="hidden lg:flex flex-col p-sm gap-md h-screen w-64 fixed left-0 top-0 bg-surface border-r-2 border-on-background shadow-[4px_0px_0px_0px_rgba(0,0,0,1)] z-[60] translate-x-[-100%] hover:translate-x-0 transition-transform duration-300">
+<div class="mb-xl text-center">
+<div class="w-24 h-24 mx-auto border-4 border-on-background brutal-shadow-sm overflow-hidden mb-sm bg-primary-fixed">
+<img class="w-full h-full object-cover" data-alt="Small thumbnail profile picture of Febrina Rahmadianti Putri for the side navigation menu, presented with a high-contrast brutalist filter and vibrant green background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbLFoPuPy_yNrETm5q8_2Du0QpEDNfir7nx75qmoKi46JnXYS3ShJywdZWkHqto7_1TROovR02OptjIB-0C-9ruOYHHC-oiRi60e_1ZbW44ldGyZ4V8KsXrFxu4aQ2tbdr2bOPyP_JBcr7vxLLdb1-KJTovk4rtFsfMVBUci08mJGDUtJ9YV9dIt3LoDkXvvzcO8wVGqODDfqTQIh8ZkuBzu-7xs0XAoNptLceitoWsaL6zskQdgeBnw">
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile text-on-surface">FEBRINA R.P.</h2>
+<p class="font-label-bold text-primary text-xs uppercase">Data Analyst</p>
+</div>
+<nav class="space-y-sm">
+<a class="flex items-center gap-sm p-sm bg-primary text-on-primary border-2 border-on-background shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] font-label-bold active:scale-95 transition-all" href="#work">
+<span class="material-symbols-outlined">database</span>
+                PORTFOLIO
+            </a>
+<a class="flex items-center gap-sm p-sm text-on-surface hover:bg-surface-variant font-body-md hover:translate-x-1 transition-transform" href="#about">
+<span class="material-symbols-outlined">person</span>
+                ABOUT
+            </a>
+<a class="flex items-center gap-sm p-sm text-on-surface hover:bg-surface-variant font-body-md hover:translate-x-1 transition-transform" href="#skills">
+<span class="material-symbols-outlined">query_stats</span>
+                SKILLS
+            </a>
+<a class="flex items-center gap-sm p-sm text-on-surface hover:bg-surface-variant font-body-md hover:translate-x-1 transition-transform" href="#contact">
+<span class="material-symbols-outlined">alternate_email</span>
+                CONNECT
+            </a>
+</nav>
+<div class="mt-auto">
+<button class="w-full py-md border-2 border-on-background bg-secondary text-white font-label-bold brutal-shadow-sm hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all">
+                GET IN TOUCH
+            </button>
+</div>
+</aside>
+<script>
+        // Sparkle Trail Effect
+        let lastSparkleTime = 0;
+        document.addEventListener('mousemove', function(e) {
+            const now = Date.now();
+            if (now - lastSparkleTime > 40) { // Limit spawn rate
+                lastSparkleTime = now;
+                const sparkle = document.createElement('div');
+                sparkle.className = 'absolute pointer-events-none z-[100]';
+                const size = Math.floor(Math.random() * 16) + 10;
+                sparkle.style.width = `${size}px`;
+                sparkle.style.height = `${size}px`;
+                
+                const colors = ['#fd6c9e', '#00875a', '#ffffff'];
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                
+                sparkle.innerHTML = `<svg viewBox="0 0 100 100" fill="${color}" stroke="#1c1b1b" stroke-width="6" stroke-linejoin="round" class="overflow-visible">
+                    <polygon points="50,5 61,35 95,35 68,57 79,90 50,70 21,90 32,57 5,35 39,35" />
+                </svg>`;
+                
+                sparkle.style.left = `${e.pageX - size/2}px`;
+                sparkle.style.top = `${e.pageY - size/2}px`;
+                sparkle.style.opacity = '1';
+                const startRotation = Math.random() * 360;
+                sparkle.style.transform = `scale(1) rotate(${startRotation}deg)`;
+                sparkle.style.transition = 'all 0.8s cubic-bezier(0.25, 1, 0.5, 1)';
+                
+                document.body.appendChild(sparkle);
+                
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        sparkle.style.opacity = '0';
+                        sparkle.style.transform = `scale(0.1) rotate(${startRotation + (Math.random() * 180 - 90)}deg) translateY(${Math.random() * 40 + 20}px)`;
+                    });
+                });
+                
+                setTimeout(() => sparkle.remove(), 800);
+            }
+        });
+
+        // Parallax effect for floating stickers
+        document.addEventListener('mousemove', function(e) {
+            const parallaxWrappers = document.querySelectorAll('.parallax-wrapper');
+            parallaxWrappers.forEach(wrapper => {
+                const speed = wrapper.getAttribute('data-speed');
+                const x = (window.innerWidth - e.pageX * speed) / 1000;
+                const y = (window.innerHeight - e.pageY * speed) / 1000;
+                wrapper.style.transform = `translateX(${x}px) translateY(${y}px)`;
+            });
+        });
+
+        // Simple micro-interaction for cards
+        document.querySelectorAll('article').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translate(-4px, -4px)';
+                card.style.boxShadow = '12px 12px 0px 0px rgba(0,0,0,1)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translate(0px, 0px)';
+                card.style.boxShadow = '8px 8px 0px 0px rgba(0,0,0,1)';
+            });
+        });
+
+        // Navbar Active State on Scroll (Scroll Spy)
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('header nav a');
+        
+        window.addEventListener('scroll', () => {
+            let current = 'home';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.scrollY >= (sectionTop - 300)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-primary', 'dark:text-primary-fixed-dim', 'border-b-2', 'border-primary');
+                link.classList.add('text-on-background', 'px-2');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.remove('text-on-background', 'px-2');
+                    link.classList.add('text-primary', 'dark:text-primary-fixed-dim', 'border-b-2', 'border-primary');
+                }
+            });
+        });
+    </script>
+
+
+</body></html>
